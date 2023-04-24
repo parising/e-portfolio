@@ -2,7 +2,6 @@ import cloud from "./assets/cloud.png";
 import coding from "./assets/coding-language.png";
 import content from "./assets/content-management.png";
 import girl from "./assets/girl.png";
-import mountain from "./assets/mountain.png";
 
 import "./App.css";
 
