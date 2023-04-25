@@ -7,14 +7,10 @@ import { NextUIProvider } from "@nextui-org/react";
 import "./App.css";
 
 import React from "react";
-import { Navbar, Button, Link, Text, Card, Radio } from "@nextui-org/react";
+import { Navbar, Button, Link, Text } from "@nextui-org/react";
 import { Layout } from "./components/Layout.js";
 
 export default function App() {
-  const [variant, setVariant] = React.useState("static");
-
-  const variants = ["static", "floating", "sticky"];
-
   return (
     <NextUIProvider>
       <Layout>
@@ -27,7 +23,12 @@ export default function App() {
           <Navbar.Content hideIn="xs">
             <Navbar.Link href="#">Home</Navbar.Link>
             <Navbar.Link href="#">Projects</Navbar.Link>
-            <Navbar.Link href="#">Resume</Navbar.Link>
+            <Navbar.Link
+              href="/files/Parisa.Khodadadinejad.Resume.pdf"
+              download
+            >
+              Resume
+            </Navbar.Link>
           </Navbar.Content>
         </Navbar>
 
